@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "UTTCertificate": {
+      "$ref": "#/definitions/UTTCertificate"
+    }
+  },
+  "required": ["UTTCertificate"],
+  "title": "UTTCertificate",
+  "definitions": {
+    "UTTCertificate": {
+      "$id": "#/properties/UTTCertificate",
+      "type": "object",
+      "title": "UTTCertificate",
+      "required": [
+        "enrollment_id",
+        "name",
+        "programme_completed",
+        "completion_date",
+        "mobile",
+        "email"
+      ],
+      "properties": {
+        "enrollment_id": { "type": "string", "title": "Enrollment ID" },
+        "name": { "type": "string", "title": "Name" },
+        "programme_completed": {
+          "type": "string",
+          "title": "Training Completed"
+        },
+        "completion_date": { "type": "string", "title": "Completed On" },
+        "mobile": { "type": "string", "title": "Mobile No." },
+        "email": { "type": "string", "title": "Email" }
+      }
+    }
+  },
+  "_osConfig": {
+    "osComment": [],
+    "privateFields": [],
+    "signedFields": [],
+    "indexFields": [],
+    "uniqueIndexFields": [],
+    "roles": ["anonymous"],
+    "inviteRoles": ["anonymous"]
+  }
+}
