@@ -1,0 +1,85 @@
+{
+    "credential_issuer": "http://172.17.39.19:8088",
+    "credential_endpoint": "http://172.17.39.19:8088/v1/esignet/vci/credential",
+    "display": [
+        {
+            "name": "WTT Credential",
+            "locale": "en"
+        }
+    ],
+    "credentials_supported": [
+        {
+            "format": "ldp_vc",
+            "id": "WTTCertificateCredential",
+            "scope": "utt_vc_ldp",
+            "cryptographic_binding_methods_supported": [
+                "did:jwk"
+            ],
+            "cryptographic_suites_supported": [
+                "Ed25519Signature2020"
+            ],
+            "proof_types_supported": [
+                "jwt"
+            ],
+            "credential_definition": {
+                "type": [
+                    "VerifiableCredential",
+                    "WTTCertificateCredential"
+                ],
+                "credentialSubject": {
+                    "courseName": {
+                        "display": [
+                            {
+                                "name": "Course Name",
+                                "locale": "en"
+                            }
+                        ]
+                    },
+                    "issuedON": {
+                        "display": [
+                            {
+                                "name": "issuedON",
+                                "locale": "en"
+                            }
+                        ]
+                    },
+                    "admissionYear": {
+                        "display": [
+                            {
+                                "name": "admissionYear",
+                                "locale": "en"
+                            }
+                        ]
+                    },
+                    "enrollment_id": {
+                        "display": [
+                            {
+                                "name": "Enrollment ID",
+                                "locale": "en"
+                            }
+                        ]
+                    }
+                }
+            },
+            "display": [
+                {
+                    "name": "WTT Verifiable Credential",
+                    "locale": "en",
+                    "logo": {
+                        "url": "https://utt.edu.tt/images/utt_crest_white.png",
+                        "alt_text": "utt logo"
+                    },
+                    "background_color": "#FDFAF9",
+                    "text_color": "#7C4616"
+                }
+            ],
+            "order": [
+                "courseName",
+                "enrollment_id",
+                "issuedON",
+                "fullName",
+                "admissionYear"
+            ]
+        }
+    ]
+}
